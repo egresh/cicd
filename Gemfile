@@ -1,1 +1,1 @@
-gem 'pry'
+gem 'rspec'

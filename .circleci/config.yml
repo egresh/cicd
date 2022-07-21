@@ -16,16 +16,10 @@ jobs:
     executor: ruby/default
     steps:
       - run:
-          name: The first step
+          name: Bundle install
           command: |
-            echo 'Hello World'
-            echo 'This is the delivery pipeline'
-      - run:
-          name: The second step
-          command: |
-            echo "Which ruby"
-            echo $PATH
-            ruby --version
+            bundle install
+            rspec
   # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
