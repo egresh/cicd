@@ -20,7 +20,11 @@ jobs:
           command: |
             echo 'Hello World'
             echo 'This is the delivery pipeline'
-# Invoke jobs via workflows
+      - run:
+          name: The second step
+          command: |
+            ls -l
+  # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
