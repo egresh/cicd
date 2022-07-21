@@ -15,6 +15,7 @@ jobs:
       - image: cimg/ruby:3.1.0
     executor: ruby/default
     steps:
+      - checkout
       - run:
           name: Bundle install
           command: |
