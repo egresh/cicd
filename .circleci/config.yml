@@ -15,7 +15,7 @@ jobs:
       - image: cimg/ruby:3.1.2
     steps:
       - checkout
-      - ruby/rspec-test:
+      - ruby/rspec-test
    
           
   # Invoke jobs via workflows
