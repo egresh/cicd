@@ -14,7 +14,7 @@ jobs:
     docker:
       - image: cimg/base:2021.04
     steps:
-      - ruby/install
+      - ruby/install 3.1.2
   # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
