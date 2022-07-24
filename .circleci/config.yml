@@ -15,6 +15,7 @@ jobs:
       - image: cimg/ruby:3.1.2
     steps:
       - checkout
+      - ruby/install-deps
       - ruby/rspec-test
    
           
